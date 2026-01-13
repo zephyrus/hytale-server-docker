@@ -70,6 +70,7 @@ fi
 
 # Add the JAR and required arguments
 STARTUP_CMD="${STARTUP_CMD} -jar ${SERVER_JAR}"
+STARTUP_CMD="${STARTUP_CMD} --assets /home/hytale/server-files/Assets.zip"
 STARTUP_CMD="${STARTUP_CMD} --bind 0.0.0.0:${DEFAULT_PORT}"
 STARTUP_CMD="${STARTUP_CMD} --auth-mode ${AUTH_MODE}"
 
