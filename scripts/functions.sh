@@ -94,7 +94,7 @@ download_server() {
     }
     
     # Check if authentication was successful by looking for credentials file
-    if [ -f "$HOME/.hytale-downloader-credentials.json" ]; then
+    if [ -f "$DOWNLOADER_DIR/.hytale-downloader-credentials.json" ]; then
       LogSuccess "Hytale Authentication Successful"
     fi
     
@@ -144,7 +144,7 @@ download_server() {
     }
     
     # Check if authentication was successful by looking for credentials file
-    if [ -f "$HOME/.hytale-downloader-credentials.json" ]; then
+    if [ -f "$DOWNLOADER_DIR/.hytale-downloader-credentials.json" ]; then
       LogSuccess "Hytale Authentication Successful"
     fi
     
