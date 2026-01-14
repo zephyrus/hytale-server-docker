@@ -113,7 +113,7 @@ exec 3>"$FIFO"
                 LogSuccess "Sent auth command to server"
             fi
             
-            if echo "$line" | grep -qE "Authentication successful!|Server is already authenticated\."; then
+            if echo "$line" | grep -qE "Authentication successful!|Server is already authenticated."; then
                 sleep 1
                 echo "/auth persistence Encrypted" >&3
                 LogSuccess "Sent persistence command to server"
