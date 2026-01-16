@@ -80,7 +80,7 @@ download_server() {
   # Check latest available version
   LogInfo "Checking latest version..."
   local latest_version
-  latest_version=$(./$(basename "$DOWNLOADER_EXEC") -print-version)
+  latest_version=$(./$(basename "$DOWNLOADER_EXEC") -version)
   
   if [ -z "$latest_version" ]; then
     LogError "Failed to get latest version"
